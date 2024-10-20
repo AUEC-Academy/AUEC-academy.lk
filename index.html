@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Profile Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d35400;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .videos, .profiles {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .videos:hover, .profiles:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h3 {
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            color: #7f8c8d;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AUEC Academy</h1>
+        <div class="buttons">
+            <a href="register.html"><button id="register-btn">Register</button></a>
+            <a href="login.html"><button id="login-btn">Login</button></a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="videos">
+            <h2>Videos</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="profiles">
+            <h2>Profiles</h2>
+            <div class="profile-container">
+                <div class="profile">
+                    <img src="Image shanika.jpg" alt="shanika">
+                    <h3>SHANIKA MIS</h3>
+                    <p> ප‍්‍රාථමික ශ්‍රේණි ඔන්ලයින් පන්ති ගුරුවරිය: ශානිකා හේරත් මිය ශ්‍රේණි: 1, 2, 3, 4, ශිෂ්‍යත්ව විභාගය
+
+            ශානිකා හේරත් මිය, පළපුරුදු ගුරුවරියක වන අතර, දරුවන්ට ඔන්ලයින් පන්තිය හරහා ඉගෙනීමට සහ ශිෂ්‍යත්ව විභාගයට සුදානම් වීමට අවස්ථාව සැලසීමේ විශේෂඥත්වයක් ඇතිවේ. 
+            මනෝවෘත්තිමය හා සාහිත්‍යමය කුසලතා ඇති කරවමින්, ඔවුන්ගේ ඉගෙනුම සවිමත් කිරීමේ දායකත්වය දක්වයි. සිසුන්ගේ අවධානය දිනා ගැනීමට ක්‍රියාකාරකම් සහිත ඉගෙනුම් කටයුතු පවත්වන අතර, 
+            සිසුන්ගේ පුද්ගලික අවශ්‍යතා සලකා බැලීමට විශේෂ අවධානයක් යොමු කරයි.</p>
+                </div>
+                <div class="profile">
+                    <img src="IMG-amila.jpg" alt="amila">
+                    <h3>AMILA SIR</h3>
+                    <p>අ.පො.ස (උ/පෙ) ගිණුම්කරණ පන්ති - අමිල රත්නායක සර්
+            පන්ති: 12 සහ 13 ශ්‍රේණි
+            
+            අමිල රත්නායක සර් ගේ අතිවිශිෂ්ට ගිණුම්කරණ පන්ති ඔබේ අ.පො.ස (උ/පෙ) විභාග සදහා සවිමත් පදනමක් ගොඩනැගීම සඳහා නිර්මාණය කර ඇත. සරල අධ්‍යාපන ක්‍රමවේදයන්, 
+            කලින් වසරවල ප්‍රශ්න පත්‍ර සාකච්ඡා සහ විභාග තාක්ෂණයන් සඳහා විශේෂ අවධානයක් දක්වයි. මෙම පන්ති තුළින් ඔබට උසස් පෙළ විභාග සඳහා විශිෂ්ට සූදානමක් ලබාගත හැක.<br><br>
+           </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
